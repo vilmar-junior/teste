@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
+import java.awt.Color;
 
 public class Principal {
 
@@ -42,6 +43,7 @@ public class Principal {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JButton btnClique = new JButton(" Clique aqui!");
+		btnClique.setForeground(Color.RED);
 		frame.getContentPane().add(btnClique, BorderLayout.CENTER);
 	}
 
