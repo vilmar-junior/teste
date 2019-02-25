@@ -6,6 +6,9 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JCheckBox;
 
 public class Principal {
 
@@ -43,8 +46,15 @@ public class Principal {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JButton btnClique = new JButton(" Clique aqui!");
+		btnClique.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnClique.setForeground(Color.RED);
 		frame.getContentPane().add(btnClique, BorderLayout.CENTER);
+		
+		JCheckBox chckbxJaFez = new JCheckBox("Ja fez?");
+		frame.getContentPane().add(chckbxJaFez, BorderLayout.SOUTH);
 	}
 
 }
