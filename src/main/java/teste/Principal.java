@@ -9,6 +9,8 @@ import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JCheckBox;
+import javax.swing.JEditorPane;
+import javax.swing.JSpinner;
 
 public class Principal {
 
@@ -55,6 +57,9 @@ public class Principal {
 		
 		JCheckBox chckbxJaFez = new JCheckBox("Ja fez?");
 		frame.getContentPane().add(chckbxJaFez, BorderLayout.SOUTH);
+		
+		JSpinner spinner = new JSpinner();
+		frame.getContentPane().add(spinner, BorderLayout.NORTH);
 	}
 
 }
