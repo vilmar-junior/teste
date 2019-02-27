@@ -15,7 +15,7 @@ import java.awt.Scrollbar;
 
 public class Principal {
 
-	private JFrame frame;
+	private JFrame frmAulaDeGit;
 
 	/**
 	 * Launch the application.
@@ -25,7 +25,7 @@ public class Principal {
 			public void run() {
 				try {
 					Principal window = new Principal();
-					window.frame.setVisible(true);
+					window.frmAulaDeGit.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -44,30 +44,27 @@ public class Principal {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmAulaDeGit = new JFrame();
+		frmAulaDeGit.setTitle("Aula de Git");
+		frmAulaDeGit.setBounds(100, 100, 450, 300);
+		frmAulaDeGit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-<<<<<<< HEAD
 		JButton btnClique = new JButton(" Clique!");
-=======
-		JButton btnClique = new JButton(" N\u00E3o Clique aqui!");
->>>>>>> branch 'master' of https://github.com/vilmar-junior/teste.git
 		btnClique.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
 		btnClique.setForeground(Color.RED);
-		frame.getContentPane().add(btnClique, BorderLayout.CENTER);
+		frmAulaDeGit.getContentPane().add(btnClique, BorderLayout.CENTER);
 		
 		JCheckBox chkFeito = new JCheckBox("Feito?");
-		frame.getContentPane().add(chkFeito, BorderLayout.SOUTH);
+		frmAulaDeGit.getContentPane().add(chkFeito, BorderLayout.SOUTH);
 		
 		JSpinner spinner = new JSpinner(); 
-		frame.getContentPane().add(spinner, BorderLayout.NORTH);
+		frmAulaDeGit.getContentPane().add(spinner, BorderLayout.NORTH);
 		
 		Scrollbar scrollbar = new Scrollbar();
-		frame.getContentPane().add(scrollbar, BorderLayout.EAST);
+		frmAulaDeGit.getContentPane().add(scrollbar, BorderLayout.EAST);
 	}
 
 }
