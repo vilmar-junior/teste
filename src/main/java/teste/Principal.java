@@ -59,7 +59,7 @@ public class Principal {
 		JCheckBox chkFeito = new JCheckBox("Feito?");
 		frame.getContentPane().add(chkFeito, BorderLayout.SOUTH);
 		
-		JSpinner spinner = new JSpinner();
+		JSpinner spinner = new JSpinner(); 
 		frame.getContentPane().add(spinner, BorderLayout.NORTH);
 		
 		Scrollbar scrollbar = new Scrollbar();
