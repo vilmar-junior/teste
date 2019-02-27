@@ -9,8 +9,9 @@ import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JCheckBox;
-import javax.swing.JEditorPane;
 import javax.swing.JSpinner;
+import java.awt.Scrollbar;
+
 
 public class Principal {
 
@@ -60,6 +61,9 @@ public class Principal {
 		
 		JSpinner spinner = new JSpinner();
 		frame.getContentPane().add(spinner, BorderLayout.NORTH);
+		
+		Scrollbar scrollbar = new Scrollbar();
+		frame.getContentPane().add(scrollbar, BorderLayout.EAST);
 	}
 
 }
