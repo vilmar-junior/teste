@@ -48,7 +48,7 @@ public class Principal {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JButton btnClique = new JButton(" Clique aqui!");
+		JButton btnClique = new JButton(" Clique!");
 		btnClique.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
