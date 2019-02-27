@@ -48,11 +48,7 @@ public class Principal {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-<<<<<<< HEAD
 		JButton btnClique = new JButton(" Clique!");
-=======
-		JButton btnClique = new JButton(" N\u00E3o Clique aqui!");
->>>>>>> branch 'master' of https://github.com/vilmar-junior/teste.git
 		btnClique.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
